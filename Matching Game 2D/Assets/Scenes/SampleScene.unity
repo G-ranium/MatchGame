@@ -1597,6 +1597,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1662687247}
+        m_TargetAssemblyTypeName: TransformBehavior, Assembly-CSharp
+        m_MethodName: ResetToZero
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1661245411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,6 +1666,7 @@ GameObject:
   - component: {fileID: 1662687244}
   - component: {fileID: 1662687246}
   - component: {fileID: 1662687245}
+  - component: {fileID: 1662687247}
   m_Layer: 0
   m_Name: Matcher
   m_TagString: Untagged
@@ -2369,6 +2382,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1662687247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662687235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcaa812b096f0e4d95390d92d349f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1670197649
 GameObject:
   m_ObjectHideFlags: 0
