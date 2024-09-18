@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29c26de14322f9348a7ebb1eff9cdbfd, type: 3}
+  m_Name: Ring V3List
+  m_EditorClassIdentifier: 
+  vector3DList:
+  - {fileID: 11400000, guid: 973adf1b5ba45604a82c1301d623553d, type: 2}
+  - {fileID: 11400000, guid: d9da2c651517e804d9e595357255598a, type: 2}
+  - {fileID: 11400000, guid: 0927571b18dbaa5459f409577475791a, type: 2}
+  - {fileID: 11400000, guid: 933282f5d93515b46a1e4292fa05cd41, type: 2}
+  - {fileID: 11400000, guid: 5bd8ab9e932aae44caaa7a8371b48574, type: 2}

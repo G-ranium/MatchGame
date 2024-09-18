@@ -7,6 +7,7 @@ public class Instancer : ScriptableObject
 {
     public GameObject prefab;
     private int num = 0;
+    private int oldNum = 1;
     public void CreateInstance()
     {
         Instantiate(prefab);
@@ -35,7 +36,14 @@ public class Instancer : ScriptableObject
     }
     public void CreateInstanceFromListRandomly(Vector3DataList obj)
     {
-        num = Random.Range(0, obj.vector3DList.Count - 1);
+        num = Random.Range(0, obj.vector3DList.Count);
+        //the following loop gives the spawn positions more variety
+        while (oldNum == num)
+        {
+            num = Random.Range(0, obj.vector3DList.Count);
+        }
         Instantiate(prefab,obj.vector3DList[num].value,Quaternion.identity);
+        // oldNum is a way to keep track of previous prefab instance
+        oldNum = num;
     }
 }
