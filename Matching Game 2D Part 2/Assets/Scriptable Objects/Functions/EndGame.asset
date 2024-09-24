@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff1044fc134ce04ea49e15184c04ce3, type: 3}
-  m_Name: Score
+  m_Script: {fileID: 11500000, guid: 752618d9633115642bf25daa6bac775f, type: 3}
+  m_Name: EndGame
   m_EditorClassIdentifier: 
-  value: 0
