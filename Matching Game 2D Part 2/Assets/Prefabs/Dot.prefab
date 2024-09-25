@@ -20,6 +20,8 @@ GameObject:
   - component: {fileID: 2499078967578075238}
   - component: {fileID: 3890332758825916029}
   - component: {fileID: 4735780084990123323}
+  - component: {fileID: 3524559893613934463}
+  - component: {fileID: -2728728294067952979}
   m_Layer: 6
   m_Name: Dot
   m_TagString: Untagged
@@ -352,10 +354,34 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   startDragEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -2728728294067952979}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Drag
+          m_BoolArgument: 0
+        m_CallState: 2
   endDragEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -2728728294067952979}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Drop
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!82 &2499078967578075238
 AudioSource:
   m_ObjectHideFlags: 0
@@ -565,3 +591,52 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   ColorIDDataListObj: {fileID: 11400000, guid: 57ce475c788cb0f4f9f20ceb3a19d6c0, type: 2}
+--- !u!114 &3524559893613934463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763956093427679747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dbf84deeacab984b839e5f411332c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: c4e6babe13ad80a4eacc7d524af627dc, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8784442081768164908}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &-2728728294067952979
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763956093427679747}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d05b6ac8010d12b4a863fcc37a2b7659, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
